@@ -8,7 +8,10 @@ import java.awt.*;
 
 public class Application {
 
+
     private ScreenUI currentScreen = null;
+
+
 
 
     public void clicked(Component eventSource){
