@@ -12,17 +12,16 @@ public class Application {
 
 
     public void clicked(Component eventSource){
+        if(currentScreen == null)
+            return;
         String sourceId = eventSource.getName();
-        if(sourceId.equals("sourceId")){
-            currentScreen = new Menu1ScreenUI();
-            currentScreen.show();
-        } else if(sourceId.equals("menu2")){
-            currentScreen = new Menu2ScreenUI();
-            currentScreen.show();
-        } else if(sourceId.equals("button1")){
-            if (currentScreen == null)
-                    return;
+        if(sourceId.equals("button1")){
             currentScreen.handleButton1Click();
+        } else if(sourceId.equals("button2")){
+            currentScreen.handleButton2Click();
         }
     }
+
+
+
 }
