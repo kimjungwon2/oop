@@ -11,4 +11,13 @@ public class Paperboy {
 
         }
     }
+
+    public void getPayment2(Customer customer){
+        int payment = 10000;
+        try{
+            int paidAmount = customer.getPayment(payment);
+        } catch (NotEnoughMoneyException e) {
+            //요금 처리
+        }
+    }
 }
