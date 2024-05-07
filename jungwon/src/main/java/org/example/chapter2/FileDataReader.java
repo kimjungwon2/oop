@@ -1,6 +1,8 @@
 package org.example.chapter2;
 
-public class FileDataReader {
+import org.example.chapter3.polymorphism.ByteSource;
+
+public class FileDataReader implements ByteSource {
     private String fileName;
 
     public FileDataReader() {

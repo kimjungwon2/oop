@@ -1,6 +1,6 @@
 package org.example.chapter3.polymorphism;
 
-public class SocketDataReader {
+public class SocketDataReader implements ByteSource {
 
     private String fileName;
 
