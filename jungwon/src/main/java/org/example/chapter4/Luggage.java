@@ -6,6 +6,10 @@ public class Luggage {
     public Luggage() {
     }
 
+    public Luggage(int size) {
+        this.size = size;
+    }
+
     public int size(){
         return this.size;
     }
