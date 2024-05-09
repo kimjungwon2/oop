@@ -1,8 +1,10 @@
 package org.example.chapter4;
 
+import java.util.ArrayList;
+
 public class UserContainer {
 
-    public void main() throws NotEnoughSpaceException {
+    public static void main (String args[]) throws NotEnoughSpaceException {
         Luggage size3Lug = new Luggage(3);
         Luggage size2Lug = new Luggage(2);
         Luggage size1Lug = new Luggage(1);
@@ -19,5 +21,18 @@ public class UserContainer {
         if (c.canContain(size1Lug)) {
             c.put(size1Lug);
         }
+
+
+        Container container = new Container(10);
+        addLuggageToContainer(10L,container);
+        addLuggageToContainer(15L,container);
     }
+
+    public static void addLuggageToContainer(Long luggageId, ArrayList container){
+        Luggage lug = null;
+        container.add(lug);
+    }
+
+
+
 }
