@@ -4,6 +4,10 @@ public class Item {
     int price;
     boolean fresh;
 
+    public Item(int price) {
+        this.price = price;
+    }
+
     public int getPrice() {
         return this.price;
     }
