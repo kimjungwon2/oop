@@ -15,3 +15,5 @@ public abstract class Authenticator {
     }
     protected abstract Auth createAuth(String id);
 }
+
+
